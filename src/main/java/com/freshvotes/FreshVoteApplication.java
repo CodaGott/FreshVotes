@@ -10,4 +10,5 @@ public class FreshVoteApplication {
         SpringApplication.run(FreshVoteApplication.class, args);
     }
 
+
 }
