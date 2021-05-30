@@ -1,2 +1,5 @@
-package com.freshvotes.models;public class Comment {
+package com.freshvotes.models;
+
+public class Comment {
+    private String text;
 }
