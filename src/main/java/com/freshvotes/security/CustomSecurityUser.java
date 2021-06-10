@@ -2,9 +2,11 @@ package com.freshvotes.security;
 
 import com.freshvotes.models.User;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 
 import java.util.Set;
 
+@Component
 public class CustomSecurityUser extends User implements UserDetails {
 
     private static final long serialVersionUID = -7340729647087369747L;
@@ -23,17 +25,17 @@ public class CustomSecurityUser extends User implements UserDetails {
 
     @Override
     public Set<Authority> getAuthorities() {
-        return this.getAuthorities();
+        return super.getAuthorities();
     }
 
     @Override
     public String getPassword() {
-        return this.getPassword();
+        return super.getPassword();
     }
 
     @Override
     public String getUsername() {
-        return this.getUsername();
+        return super.getUsername();
     }
 
     @Override

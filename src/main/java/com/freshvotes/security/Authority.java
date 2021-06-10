@@ -10,11 +10,10 @@ import javax.persistence.*;
 @Entity
 public class Authority implements GrantedAuthority {
     private static final long serialVersionUID = 6180472730078286755L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String authority;
-    @ManyToOne
+    @ManyToOne()
     private User user;
 
 
